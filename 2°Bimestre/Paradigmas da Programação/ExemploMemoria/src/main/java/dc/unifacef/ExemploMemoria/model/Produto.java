@@ -10,6 +10,12 @@ public class Produto {
     public Produto() {
     }
 
+    public Produto(String nome, double preco, Integer estoque) {
+        this.nome = nome;
+        this.preco = preco;
+        this.estoque = estoque;
+    }
+
     public Long getId() {
         return id;
     }
