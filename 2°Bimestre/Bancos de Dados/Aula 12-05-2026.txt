@@ -1,0 +1,26 @@
+Aula 12/05/2026
+
+NORMALIZAÇÃO DE DADOS -> Não é interessante de se utilizar
+
+Desnormalização -> Primeiras dores: -> Queda de performance
+				    -> Inconsistencia e Duplicidade de Dados
+			  	    ->
+
+É possivel normalizar, depende do percentual de desnormalização, caso 80% é preciso migrar os dados de um banco para outro
+É preciso a participação de um dev para conseguir corrigir a aplicação para o novo banco(normalizado)
+
+OBJETIVO:
+-> eliminar redundancia de dados
+-> eliminar estruturas inexistentes no modelo ER
+
+PROCESSO:
+-> baseado em Formas Normais(FN)
+
+
+FORMAS NORMAIS -> 1° Eliminar tabelas aninhadas, atributos não atomicos e multivalorados.
+		  2° Eliminar Dependencia Funcional Parcial -> ocorre quando uma coluna depende de parte da chave primaria composta
+			Ex: tb_x(col_a(pk), col_b(pk), col_c, col_d(depende de col_b))
+		  3° Eliminar Dependencia Funcional Transitiva -> ocorre quando uma coluna depende de outra coluna não chave.
+			Ex: Ex: tb_x(col_a(pk), col_b(pk), col_c, col_d(depende de col_c))
+		  4° Eliminar Dependencia Funcional Multivalorado
+		  5° Eliminar Dependencia Funcional Ciclica
