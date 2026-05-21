@@ -1,0 +1,35 @@
+Aula 15/05/2026
+
+Tabela não normalizada(nn) ou tabela não 1fn
+	- Tabelas mais aninhadas
+tabela aninhada:
+-> Grupo repetio
+-> Coluna multivalorada
+-> Coluna não atômica
+-> Não contem valores atômicos, e sim, tabelas aninhadas
+
+Processo de normalização
+(em cascata)
+1FN
+  -> 
+     2FN
+	-> 
+	   3FN
+
+Passagem para a 1FN
+ - 1FN
+	-> Uma tabela e
+	2° passo => Identificar chave primaria
+
+
+para transformar -> construir um unica tabela com redundância de dados
+		 -> construir uma tabela para cada tabela aninhada(mais utilizada)
+AO FINAL DA NORMANILIZAÇÃO SEMPRE SE TERÁ MAIS TABELAS DO QUE QUANDO COMEÇOU O PROJETO
+
+DEPENDENCIA FUNCIONAL 
+Uma coluna C2 depende funcionalmente de C1
+
+2FN - >  Uma coluna depende de apenas da 1 das chaves primarias
+3FN -> Uma coluna depende de uma outra que não é chave primaria
+
+Dependencia multivalorada -> -> (seta dupla)
